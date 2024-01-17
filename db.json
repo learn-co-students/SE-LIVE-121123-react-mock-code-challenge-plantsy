@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Calathea",
+      "image": "./images/calathea.jpg",
+      "price": "13.99",
+      "id": 8
+    },
+    {
+      "name": "Calathea",
+      "image": "./images/calathea.jpg",
+      "price": "10.24",
+      "id": 9
     }
   ]
 }
