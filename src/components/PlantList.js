@@ -1,13 +1,16 @@
 import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList({ plants }) {
+function PlantList({ plants, onEditPlant }) {
+  const plantCards = plants.map((plant) => (
+    <PlantCard
+      key={plant.id}
+      {...plant}
+      onEditPlant={onEditPlant}
+    />
+  ));
 
-  const plantCards = plants.map(plant => <PlantCard key={plant.id} {...plant}/>)
-
-  return (
-    <ul className="cards">{plantCards}</ul>
-  );
+  return <ul className="cards">{plantCards}</ul>;
 }
 
 export default PlantList;
